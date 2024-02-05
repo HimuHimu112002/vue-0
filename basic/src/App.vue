@@ -1,27 +1,26 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-import WelcomeItem from './components/WelcomeItem.vue';
-import { reactive } from 'vue'
-import { ref } from 'vue'
-const count = ref(10)
-const state = reactive({ count: 0 })
+import CountCompo from './components/CountCompo.vue'
+import StyleTest from './components/StyleTest.vue';
+import ConditionalRender from './components/ConditionalRender.vue';
+import ListRender from './components/ListRender.vue';
+import EventHand from './components/EventHand.vue';
 
 </script>
 
 <template>
+
   <header>
     <h1>Aktarujjaman</h1>
   </header>
 
   <main>
-    <WelcomeItem/>
-    <HelloWorld/>
-    <TheWelcome/>
-    <button @click="count = count + 10">Count is: {{ count }}</button> <br/>
-
-    <button @click="state.count++">{{ state.count }}</button>
+    <StyleTest/>
+    <CountCompo/>
+    <ConditionalRender/>
+    <ListRender/>
+    <EventHand/>
   </main>
+
 </template>
 
 <style scoped>
